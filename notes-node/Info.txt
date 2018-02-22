@@ -1,0 +1,15 @@
+1. To access Command Line arguments, we use "process.argv" where argv
+is an array, vector that has the command line arguments.
+
+2. Node debug mode --> node inspect filename.js
+This starts the debug mode and to execute line by line, we use 'n' command,
+and to continue with the rest of lines at some point of time, we use
+'c' command so that execution reaches end of file.
+
+ shut down debugger - ctrl+c twice.
+
+REPL - Read Evaluate Print Loop (explore variable values, functions)
+ctrl+c -> debug mode back again
+
+To apply breakpoints to code, use debugger; program halts there and you can
+continue from there by giving command c.
