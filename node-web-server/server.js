@@ -1,6 +1,7 @@
 const express = require('express');
 const hbs = require('hbs');
 var app = express();
+const port = process.env.PORT || 3000;
 hbs.registerPartials(__dirname + '/views/partials');
 app.set('view engine','hbs'); // To set HBS as view engine and Express takes file from Views folder
 
@@ -41,4 +42,6 @@ app.get('/bad', (req,res) => {
   });
 });
 
-app.listen(3000); //listening port
+app.listen(port, () => {
+  console.log(`Server is up on port ${port}`);
+}); //listening port
